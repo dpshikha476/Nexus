@@ -1,0 +1,780 @@
+/******************************************** common *********************************************/
+
+.main-heading
+{
+    font-size: 4.2rem; 
+    font-weight: bold;
+    color: white;
+}
+
+span
+{
+    font-family: 'Akaya Telivigala', cursive;
+    margin-bottom: 2rem;
+}
+
+.logo
+{
+    font-family: 'Fascinate', cursive;
+    
+}
+.logo span
+{
+    font-family: 'Fascinate', cursive;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Acme', sans-serif;
+}
+
+hr
+{
+    height:1px;
+    border-width:0;
+    color: gray ;
+    background-color: gray  ;
+}
+
+.but
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: #2e2e2e solid;
+}
+.but:hover
+{
+    background: transparent;
+    font-weight: bold;
+    border: #2e2e2e solid;
+    color: #2e2e2e;
+}
+
+.butn
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: #252525 solid;
+}
+.butn:hover
+{
+    background-color: white;
+    font-weight: bold;
+    border: #252525 solid;
+    color: #252525;
+}
+
+.head
+{
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.head span
+{
+    font-size: 4.2rem;
+}
+
+@media only screen and (max-width:575px)
+{
+    .head
+    {
+        font-size: 3rem;
+    }
+
+    .head span
+    {
+        display: block;
+        font-size: 3.7rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+
+
+
+/************************************************************* navbar ****************************************************************/
+
+
+#navigation .navbar 
+{
+    padding:0.8rem;
+}
+  
+  
+#navigation .brank
+  {
+      padding: 1rem 4rem 1rem;
+      background-color: #fff;
+      border-bottom: 4px solid #2e2e2e;
+  }
+  #navigation .brank h5
+  {
+      color: #2e2e2e;
+      font-family: 'Akaya Telivigala', cursive;
+  }
+  
+  #navigation .brank h4
+  {
+      font: 1.5rem sans-serif;
+  }
+
+  
+  #navigation .l
+  {
+      display: block;
+      justify-content: left;
+      align-self: center;
+       
+  }
+  #navigation .b
+  {
+      display: block;
+      align-self: center;
+     padding-right: 0;
+       
+  }
+  #navigation .h
+  {
+      display: block;
+      justify-content: left;
+      align-self: center;
+  }
+  
+  
+  #navigation .navbar-brand 
+  {
+      color: #000;
+      font-size: 2rem;
+  }
+  #navigation  .navbar-brand:hover
+  {
+      color: #000;
+  } 
+
+  #navigation  .animated-icon3 
+{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    outline: none;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+#navigation .animated-icon3 span 
+{
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+
+#navigation .animated-icon3 span 
+{
+    background: black;
+}
+#navigation button:focus
+{
+    outline: 1px dotted white;
+    outline: 5px auto -webkit-focusring-color ;
+}
+
+#navigation .animated-icon3 span:nth-child(1) 
+{
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#navigation .animated-icon3 span:nth-child(2) 
+{
+    top: 10px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#navigation .animated-icon3 span:nth-child(3) 
+{
+    top: 20px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#navigation .animated-icon3.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 0px;
+    left: 8px;
+}
+
+#navigation .animated-icon3.open span:nth-child(2) 
+{
+    width: 0%;
+    opacity: 0;
+}
+
+#navigation .animated-icon3.open span:nth-child(3) 
+{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 8px;
+}
+
+
+
+  
+#navigation .dropdown-menu
+{
+    margin-top: 0.8rem;
+    background-color: white;
+    border-radius: 0;
+    padding: 0.5rem;
+}
+
+
+#navigation .dropdown-menu-arrow 
+{
+  top: -25px;
+  left: 15%;
+  width: 0;
+  height: 8px;
+  position: relative;
+}
+#navigation .dropdown-menu-arrow:before,
+#navigation .dropdown-menu-arrow:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 7px 8px;
+  border-style: solid;
+  border-color: transparent;
+  z-index: 1001;
+}
+#navigation .dropdown-menu-arrow:after {
+  bottom: -18px;
+  right: -8px;
+  border-bottom-color: #fff;
+}
+#navigation .dropdown-menu-arrow:before {
+  bottom: -17px;
+  right: -8px;
+  border-bottom-color: rgba(0,0,0,.15);
+}
+
+#navigation .bt
+{
+    background: transparent;
+    border: none;
+}
+
+#navigation .dropdown-menu-arrow:after
+{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px)
+{
+    #navigation .b
+    {
+        margin-left: 0;
+        padding-left: 0;
+            
+    }
+}
+  
+@media only screen and (max-width: 575px)
+  {
+        #navigation .navbar 
+        {
+            padding:0.1rem;
+        }
+        #navigation  .brank
+        {
+          padding: 1rem 1rem 1rem;
+          background-color: #fff;
+          border-bottom: 4px solid #2e2e2e;
+        }
+  
+        #navigation  .brank h5
+        {
+            font-size: 0.7rem;
+        }
+    
+        #navigation  .brank h4
+        {
+            font: 0.6rem sans-serif;
+        }
+
+        #navigation .b
+        {
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        #navigation .h
+        {
+            padding-left: 1.8rem;
+        }
+
+        #navigation .navbar-brand 
+        {
+            font-size: 1rem;
+        }
+  
+  }
+
+  /*************************** Breadcrumb **************/
+
+  #bread
+  {
+    background-color: black;
+  }
+
+
+  #bread h4
+  {
+      color: white;
+      font-weight: bold;
+  }
+
+  #bread .breadcrumb-item + .breadcrumb-item::before 
+  {
+        content: ">";
+        color:rgb(163, 162, 162);
+        font-size: 1.2rem;
+  }
+
+  #bread .breadcrumb
+  {
+      background-color: black;
+      border-radius: 0;
+  }
+
+  #bread ol > li
+  {
+    color: white;
+     font-size: 1.2rem;
+  }
+
+  #bread ol > li > a 
+  {
+    color:rgb(163, 162, 162);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  #bread ol > li > a:hover
+  {
+      text-decoration: none;
+      color:white;
+  }
+
+  #bread .tit
+  {
+    display: flex;
+    align-items: center;
+  } 
+  
+  #bread .tot
+  {
+    padding-top: 0.3rem;
+  }  
+
+@media only screen and (max-width: 575px)
+{
+    #bread h4
+    {
+        font-size: 1rem;
+    }
+
+    #bread ol > li > a,  #bread .active, #bread .breadcrumb-item + .breadcrumb-item::before 
+    {
+        font-size: 0.8rem;  
+    }
+}
+
+
+/************************************************************* container 0 ****************************************************************/
+
+#conta0 .icon-bar 
+{
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  #conta0 .icon-bar a 
+  {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #conta0 .icon-bar a:hover 
+  {
+    background-color: #000;
+  
+  }
+  
+  
+  #conta0 .icon 
+  {
+    background: crimson;
+    color: white;
+    margin: 0 0 0.2rem;
+  }
+  
+  @media only screen and (max-width:990px)
+{
+    #conta0 .icon-bar a 
+    {
+      padding: 7px;
+      font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:575px)
+{
+    #conta0 .icon-bar a 
+    {
+      padding: 7px;
+      font-size: 14px;
+    }
+}
+
+/************************************************************container 1 ******************************************************/
+
+#conta1 
+{
+    padding: 7rem 0 7rem;
+    background-color: whitesmoke;
+}
+
+#conta1 .one-book
+{
+    text-align: center;
+}
+
+#conta1 .one-book img
+{
+    height: 25rem;
+    width: 17rem;
+}
+
+#conta1 .book-details .author
+{
+    font-family: 'Satisfy', cursive;
+    color: rgb(70, 68, 68);
+}
+
+#conta1 .book-details .stars
+{
+    color: crimson;
+}
+
+#conta1 .book-details .price
+{
+    color: crimson;
+}
+
+#conta1 .book-details .btn
+{
+    margin: 1rem 0 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: crimson;
+    border: crimson 3px solid;
+}
+#conta1 .book-details .btn:hover
+{
+    color: crimson;
+    background-color: white;
+    border: crimson 3px solid;
+}
+
+#conta1 .book-details .description
+{
+    color: rgb(70, 68, 68);
+}
+
+#conta1 .book-details .categories
+{
+    color: rgb(70, 68, 68);
+    font-family: sans-serif;
+}
+#conta1 .book-details .categories span
+{
+    font-family: sans-serif;
+}
+
+
+@media only screen and (max-width:575px)
+{
+    #conta1 .book-details
+    {
+        margin-top: 2rem;
+        padding: 0 2rem 0;
+        text-align: center;
+    }
+}
+
+
+
+
+/************************************************************Container 2 ******************************************************/
+
+#conta2
+{
+  margin: 4rem 0 4rem;
+}
+
+#conta2 nav > .nav.nav-tabs
+{
+
+border: none;
+color:#fff;
+background: rgb(56, 56, 56);
+border-radius:0;
+
+}
+  #conta2 nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+  border: none;
+    padding: 18px 25px;
+    color:#fff;
+    background: rgb(56, 56, 56);
+    border-radius:0;
+  }
+
+  #conta2 nav > div a.nav-item.nav-link.active:after
+  {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: crimson ;
+  }
+  #conta2  .tab-content
+  {
+
+    background: white;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top:5px solid crimson;
+    border-bottom:5px solid crimson;
+    padding:3rem 4rem;
+  }
+
+  #conta2 nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+  border: none;
+    background: crimson;
+    color:#fff;
+    border-radius:0;
+    transition: background 0.20s linear;
+  }
+
+
+
+  /************************************************************Container 2 ******************************************************/
+
+  #conta3
+  {
+      margin: 6rem 0 4rem;
+  }
+ 
+
+  #conta3 .card-group
+  {
+      margin-top: 4rem;
+  }
+
+  
+  #conta3 .cardo
+  {
+      background: transparent;
+      border: none;
+  }
+
+  .stars
+    {
+        color:#ff4c68;
+    }
+
+    #conta3 .underline
+    {
+        height: 3px;
+        width: 3rem;
+        float:left;
+        background: crimson;
+    }
+
+@media only screen and (max-width:575px)
+{
+    #conta3
+    {
+        margin-left: 1rem;
+        margin-right: 1rem;;
+    }
+
+    #conta3 .card-body
+    {
+        font-size: 0.8rem;
+    }
+}
+
+/************************************************************footer section ******************************************************/
+
+#footer
+{
+    background-color: whitesmoke;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.footer-container
+{
+    margin-bottom: 4rem;
+}
+
+.footer-padding
+{
+    padding-right: 4rem;
+}
+
+.quick a
+{
+    color: black;
+}
+
+.quick a:hover
+{
+    color: #ff4c68;
+}
+
+.social-icons
+{
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+    color: rgba(7, 6, 6, 0.6);
+}
+
+.social-icons:hover
+{
+    color: #ff4c68;
+}
+
+#footer .com
+{
+    padding: 0.5rem;
+}
+
+#footer .colm
+{
+    padding-right: 3rem;
+}
+
+
+.smallbook
+{
+    
+    height: 6rem;
+    width: 4rem;
+    box-shadow: 3px 3px rgb(156, 156, 156);
+}
+
+#footer li
+{
+    margin: 0.4rem 0 0.4rem 0;
+    transition: all 0.3s;
+}
+
+
+#footer li:hover
+{
+    margin-left: 0.5rem;
+    transition: all 0.3s;
+}
+#footer a
+{
+    font-size: 1.1rem;
+
+}
+
+
+@media only screen and (max-width:1024px)
+{
+    #footer .colm
+    {
+    padding-right: 1rem;
+    }
+    #footer .sml
+    {
+    margin-right: 0.2rem;
+    }
+}
+
+@media only screen and (max-width:575px)
+{
+    #footer
+    {
+        padding: 0 2rem 0;
+    }
+    #footer .colum
+    {
+        margin-top: 2rem;
+    }
+    .com
+    {
+        padding-top: 1.5rem;
+    }
+}
