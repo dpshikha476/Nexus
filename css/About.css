@@ -443,6 +443,7 @@ hr
 {
     position: fixed;
     top: 50%;
+    z-index: 1000;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -656,8 +657,8 @@ hr
    }
 }
 
-
-
+.butn:focus{outline: none;}
+.butn:hover{background-color: #00000000;}
 
 
 /************************************************************footer section ******************************************************/
