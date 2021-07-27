@@ -10,12 +10,6 @@
     
 } 
 
-.navbar .navbar-dark .navbar-toggler
-{
-    border: none;
-}
-
-
 .navbar .navbar-brand 
 {
     color: #000;
@@ -101,6 +95,15 @@
 
 }
 
+.navbar-toggler {
+    outline: none;
+    border: none;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+}
 
 .social
 {
@@ -125,9 +128,9 @@
     color: white;
 }
 
-span
+.hambug
 {
-    /* font-size: 6rem; */
+    font-size: 26px;
     font-family: 'Akaya Telivigala', cursive;
     margin-bottom: 2rem;
 }
@@ -165,6 +168,10 @@ hr
     padding-left: 1rem;
     padding-right: 1rem;
     border: rgb(36, 36, 36) solid;
+    outline: none;
+}
+.but.z:hover {
+    background-color: #fff;
 }
 .but:hover
 {
@@ -172,8 +179,10 @@ hr
     font-weight: bold;
     border: rgb(36, 36, 36) solid;
     color: rgb(36, 36, 36);
-    background-color: white;
+    background-color: rgba(0,0,0,0);
+    outline: none;
 }
+
 
 .butn
 {
@@ -183,13 +192,15 @@ hr
     padding-right: 1rem;
     border: #252525 solid;
 }
+
 .butn:hover
 {
-    background-color: white;
+    background-color: #00000000;
     font-weight: bold;
     border: #252525 solid;
     color: #252525;
 }
+.butn:focus{outline: none;}
 
 .head
 {
@@ -489,6 +500,7 @@ hr
     text-align: center;
     padding: 0.7rem;
 }
+.input:focus{outline: none;}
 
 .butn-con3
 {
@@ -501,7 +513,7 @@ hr
 }
 .butn-con3:hover
 {
-    background-color: white;
+    background-color: rgba(0,0,0,0);
     font-weight: bold;
     border: #252525 solid;
     color: #252525;
@@ -1359,6 +1371,7 @@ hr
    }
 }
 
+.but:focus{outline: none;}
 
 /* footer section */
 
